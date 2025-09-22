@@ -5,10 +5,10 @@ import ChatInput from "../ChatInput/ChatInput";
 export default function ChatMessage() {
   const [messages, setMessages] = useState([]);
 
-  const adicionarMensagem = (sender: string, text: string) => {
-    const novaMensagem = { sender, text, id: Date.now() };
-    setMessages((precMessages) => [...prevMessages, novaMensagem]);
-  };
+  // const adicionarMensagem = (sender: string, text: string) => {
+  //   const novaMensagem = { sender, text, id: Date.now() };
+  //   setMessages((precMessages) => [...prevMessages, novaMensagem]);
+  // };
   return (
     <div>
       <div className="container-chat">
