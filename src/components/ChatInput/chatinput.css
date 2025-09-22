@@ -1,0 +1,16 @@
+.answer {
+  color: oklch(25.066% 0.14289 282.304);
+  border-color: oklch(69.976% 0.17614 294.526 / 0.338);
+  border-radius: 20px;
+  margin-left: 10%;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.msg-bot-answer {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  font-size: 11px;
+}

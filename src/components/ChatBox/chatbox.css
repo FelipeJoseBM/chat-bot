@@ -1,0 +1,25 @@
+.container-menu {
+  background-color: blueviolet;
+  display: flex;
+  padding-left: 15px;
+}
+
+.menu-name,
+.menu-status {
+  text-align: start;
+}
+
+.menu-photo {
+  width: 8%;
+  padding: 10px;
+  border-radius: 50%;
+  justify-content: space-evenly;
+}
+
+.menu-name {
+  margin-bottom: 0;
+}
+
+.menu-status {
+  margin-top: 0;
+}

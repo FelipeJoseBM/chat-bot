@@ -1,0 +1,30 @@
+.container-chat {
+  background-color: oklch(72.362% 0.01297 259.903 / 0.154);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 2%;
+  padding: 1%;
+  border: solid oklch(25.066% 0.14289 282.304) 2px;
+  border-radius: 20px;
+}
+
+.container-msg {
+  margin-right: auto;
+}
+
+.msg-name {
+  color: oklch(37.2% 0.044 257.287);
+  margin-bottom: 4%;
+}
+
+.msg-bot {
+  background-color: oklch(69.976% 0.17614 294.526 / 0.338);
+  border-radius: 10px;
+  padding: 1%;
+  width: 200px;
+}
