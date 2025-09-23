@@ -7,10 +7,10 @@ export default function ChatBox() {
   return (
     <div>
       <div className="container-menu">
-        <img src={profilePhoto} alt="" className="menu-photo" />
+        <img src={profilePhoto} alt="Foto de perfil" className="menu-photo" />
         <div className="profile-data">
           <h2 className="menu-name">Nome</h2>
-          <h4 className="menu-status">Status</h4>
+          <h4 className="menu-status">Online</h4>
         </div>
       </div>
       <ChatMessage />

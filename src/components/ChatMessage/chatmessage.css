@@ -1,5 +1,5 @@
 .container-chat {
-  background-color: oklch(72.362% 0.01297 259.903 / 0.154);
+  background-color: #e3e3fa;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -9,7 +9,7 @@
   margin-right: 30%;
   margin-top: 2%;
   padding: 1%;
-  border: solid oklch(25.066% 0.14289 282.304) 2px;
+  border: solid #3a3a5a 2px;
   border-radius: 20px;
 }
 
@@ -18,13 +18,31 @@
 }
 
 .msg-name {
-  color: oklch(37.2% 0.044 257.287);
+  color: #5a5a8a;
   margin-bottom: 4%;
 }
 
 .msg-bot {
-  background-color: oklch(69.976% 0.17614 294.526 / 0.338);
+  background-color: #d1d1f7;
   border-radius: 10px;
   padding: 1%;
+  padding-left: 20px;
   width: 200px;
+}
+
+.msg-bot-answer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.answer {
+  color: #3a3a5a;
+  border-color: #d1d1f7;
+  border-radius: 20px;
+  margin-left: 10%;
+  margin-top: 5px;
+  padding: 5px;
+  font-size: 12px;
 }

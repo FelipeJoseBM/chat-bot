@@ -1,6 +1,5 @@
 import React from "react";
 import "./chatinput.css";
-import ButtonAnswer from "../ButtonAnswer/ButtonAnswer";
 
 export default function ChatInput() {
   return (
@@ -8,27 +7,27 @@ export default function ChatInput() {
       <div className="msg-bot-answer">
         <div>
           <button className="answer" id="1">
-            Hello Bot! How are you?
+            Olá Bot! Como você está?
           </button>
         </div>
         <div>
           <button className="answer" id="2">
-            I have a question.
+            Tenho uma pergunta.
           </button>
         </div>
         <div>
           <button className="answer" id="3">
-            What movie can I see today?
+            Que filme posso ver hoje?
           </button>
         </div>
         <div>
           <button className="answer" id="4">
-            What's the weather outside?
+            Como está o tempo lá fora?
           </button>
         </div>
         <div>
           <button className="answer" id="5">
-            Tell me a joke.
+            Me conte uma piada.
           </button>
         </div>
       </div>
