@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import "./chatmessage.css";
-import { text } from "stream/consumers";
 
 export default function ChatMessage() {
   interface Mensagens {
     text: string;
     sender: "user" | "bot";
   }
+
   const [mensagens, setMensagens] = useState<Mensagens[]>([
     { text: "Olá pessoa! Tudo bem?", sender: "bot" },
     { text: "Eu sou um Bot, e este é o meu chat!", sender: "bot" },
   ]);
+
   const botRespostas: { [key: string]: string } = {
     "Olá Bot! Como você está?": "Estou bem, obrigado por perguntar! E você?",
     "Tenho uma pergunta.": "Claro! Pode perguntar o que quiser.",
@@ -19,20 +20,21 @@ export default function ChatMessage() {
     "Me conte uma piada.":
       "Por que o livro de matemática se suicidou? Porque tinha muitos problemas.",
   };
+
   const Clicar = (question: string) => {
     setMensagens((prevMensagens) => [
       ...prevMensagens,
       { text: question, sender: "user" },
     ]);
     setTimeout(() => {
-      const botResposta =
-        botRespostas[question] || "Desculpe, não entendi sua pergunta.";
+      const botResposta = botRespostas[question];
       setMensagens((prevMensagens) => [
         ...prevMensagens,
         { text: botResposta, sender: "bot" },
       ]);
     }, 1500);
   };
+
   return (
     <div className="container-chat">
       <div className="container-name">
@@ -40,7 +42,7 @@ export default function ChatMessage() {
       </div>
       <div className="chat-container">
         {mensagens.map((msg, index) => (
-          <div key={index} className={`msg ${msg.sender}`}>
+          <div key={index} className={`msg-bot`}>
             {msg.text}
           </div>
         ))}
